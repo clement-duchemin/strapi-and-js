@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Contenu": {
+      "type": "richtext"
+    },
+    "Auteur": {
+      "type": "string"
+    },
+    "test": {
+      "type": "string"
+    },
+    "categorie": {
+      "model": "categorie"
+    }
+  }
+}
